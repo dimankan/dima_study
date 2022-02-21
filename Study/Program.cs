@@ -6,7 +6,20 @@ namespace Study
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RunReflect();
+        }
+
+
+        static void RunReflect()
+        {
+            Reflect.ShowMemberInfoName("Student");
+
+            Console.WriteLine();
+            Reflect.ShowMemberInfoNameNonPublicORInstance("Student");
+
+            Console.WriteLine();
+
+            Reflect.ChangeField();
         }
     }
 }
