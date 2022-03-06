@@ -9,22 +9,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Stimulsoft.Report;
 using System.IO;
+using System.Diagnostics;
 
 namespace Stimul47
 {
     public partial class Form1 : Form
     {
+        #region Данные
+
         private Stimulsoft.Report.StiReport stiReport1;
         private DataSet ds;
         private DataTable dt;
-        private DataTable dtTrans;
         Dictionary<string, string> data;
 
+        #endregion
+
+        #region Инициализация
         public Form1()
         {
             InitializeComponent();
 
-
+            InitialData();
+        }
+        void InitialData()
+        {
             stiReport1 = new Stimulsoft.Report.StiReport();
             ds = new DataSet();
             data = new Dictionary<string, string>(){
@@ -59,27 +67,39 @@ namespace Stimul47
             dt = FillDataTable(data);
             dataGridView1.DataSource = dt;
         }
-        private void button3_Click(object sender, EventArgs e)
+        #endregion
+
+        #region Действия
+        private void buttonChooseFile_Click(object sender, EventArgs e)
         {
-            tbPath.Text = StaticClasses.Select.Method("Шаблон Stimulsoft |*.mrt");
-            //MessageBox.Show(tbPath.Text);
+            tbPath.Text = StaticClasses.Select.ChooseFile("Шаблон Stimulsoft |*.mrt");
+        }
+        private void buttonWriteXml_Click(object sender, EventArgs e)
+        {
+            if (ds.Tables.Count != 0)
+            {
+                ds.Tables.Clear();
+            }
+            try
+            {
+                GetXML((DataTable)dataGridView1.DataSource);
+            }
+            catch (Exception)
+            {
+                return;
+            }
         }
         private void buttonRunDesign_Click(object sender, EventArgs e)
         {
             stiReport1.Load(tbPath.Text);
             stiReport1.Design();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonShowReport_Click(object sender, EventArgs e)
         {
-            if (ds.Tables.Count !=0)
+            if (ds.Tables.Count != 0)
             {
                 ds.Tables.Clear();
             }
-
-
-
-            //GetXML(dt);
 
             ds.Tables.Add((DataTable)dataGridView1.DataSource);
 
@@ -87,11 +107,17 @@ namespace Stimul47
             stiReport1.Load(tbPath.Text);
             stiReport1.Compile();
 
-
             stiReport1.Show();
         }
+        #endregion
 
+        #region Вспомогательные методы
 
+        /// <summary>
+        /// Формирование DataTable из словаря
+        /// </summary>
+        /// <param name="dict"></param>
+        /// <returns></returns>
         public static DataTable FillDataTable(Dictionary<string, string> dict)
         {
             DataTable dt = new DataTable();
@@ -109,6 +135,30 @@ namespace Stimul47
             return dt;
         }
 
+        /// <summary>
+        /// Записать данные из DataTable в txt или xml
+        /// </summary>
+        /// <param name="dataTable1"></param>
+        private static void GetXML(DataTable dataTable1)
+        {
+            dataTable1.TableName = "DataTable";
+            string path = StaticClasses.Select.SaveFile("txt files (*.txt)|*.txt|xml files (*.xml)|*.xml");
+            using (FileStream stream = new FileStream(path, FileMode.OpenOrCreate))
+            {
+                dataTable1.WriteXml(stream);
+            }
+
+            StaticClasses.Select.DialogOpenFile(path);
+        }
+
+        #endregion
+
+
+
+        #region Old Filling. Before FillDataTable()
+        /// <summary>
+        /// Заполнение шаблона, в котором используются переменные (Не по XSD схеме)
+        /// </summary>
         private void WithoutXML()
         {
             stiReport1.Load(@"C:\Users\ASUS\OneDrive\Рабочий стол\from rtf.mrt");
@@ -121,37 +171,6 @@ namespace Stimul47
             stiReport1["Face_short_ADR"] = "ADR olol";
             stiReport1["doc_num"] = "sad 2222";
         }
-
-        private static void GetXML(DataTable dataTable1)
-        {
-            dataTable1.TableName = "DataTable";
-            string path = @"D:\1.txt";
-            using (FileStream stream = new FileStream(path, FileMode.OpenOrCreate))
-            {
-                dataTable1.WriteXml(stream);
-            }
-        }
-
-        private DataTable GetTransposedTable(DataTable dt)
-        {
-            DataTable newTable = new DataTable();
-            newTable.Columns.Add(new DataColumn("0", typeof(string)));
-            for (int i = 0; i < dt.Columns.Count; i++)
-            {
-                DataRow newRow = newTable.NewRow();
-                newRow[0] = dt.Columns[i].ColumnName;
-                for (int j = 1; j <= dt.Rows.Count; j++)
-                {
-                    if (newTable.Columns.Count < dt.Rows.Count + 1)
-                        newTable.Columns.Add(new DataColumn(j.ToString(), typeof(string)));
-                    newRow[j] = dt.Rows[j - 1][i];
-                }
-                newTable.Rows.Add(newRow);
-            }
-            return newTable;
-        }
-
-        #region Old Filling
         /*
         dataTable1.Columns.Add("Key", type: typeof(string));
         dataTable1.Columns.Add("Value", type: typeof(string));
@@ -165,8 +184,6 @@ namespace Stimul47
         dataTable1.AcceptChanges(); 
         */
         #endregion
-
-
 
 
     }

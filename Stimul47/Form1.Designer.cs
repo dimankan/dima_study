@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buttonRunDesign = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonShowReport = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbPath = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonChooseFile = new System.Windows.Forms.Button();
             this.dataSet1 = new Stimul47.Data.DataSet1();
             this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -63,6 +63,7 @@
             this.docUserFioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docUserPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docUserEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buttonWriteXml = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -70,13 +71,14 @@
             // 
             // buttonRunDesign
             // 
+            this.buttonRunDesign.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRunDesign.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
             this.buttonRunDesign.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
             this.buttonRunDesign.FlatAppearance.BorderSize = 3;
             this.buttonRunDesign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRunDesign.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonRunDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonRunDesign.Location = new System.Drawing.Point(15, 72);
+            this.buttonRunDesign.Location = new System.Drawing.Point(153, 67);
             this.buttonRunDesign.Name = "buttonRunDesign";
             this.buttonRunDesign.Size = new System.Drawing.Size(96, 36);
             this.buttonRunDesign.TabIndex = 0;
@@ -84,28 +86,30 @@
             this.buttonRunDesign.UseVisualStyleBackColor = false;
             this.buttonRunDesign.Click += new System.EventHandler(this.buttonRunDesign_Click);
             // 
-            // button2
+            // buttonShowReport
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.button2.Location = new System.Drawing.Point(136, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 36);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Просмотреть";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonShowReport.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonShowReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
+            this.buttonShowReport.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
+            this.buttonShowReport.FlatAppearance.BorderSize = 3;
+            this.buttonShowReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonShowReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonShowReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.buttonShowReport.Location = new System.Drawing.Point(255, 67);
+            this.buttonShowReport.Name = "buttonShowReport";
+            this.buttonShowReport.Size = new System.Drawing.Size(96, 36);
+            this.buttonShowReport.TabIndex = 1;
+            this.buttonShowReport.Text = "Просмотреть";
+            this.buttonShowReport.UseVisualStyleBackColor = false;
+            this.buttonShowReport.Click += new System.EventHandler(this.buttonShowReport_Click);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(48, 4);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 2;
@@ -113,28 +117,30 @@
             // 
             // tbPath
             // 
+            this.tbPath.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.tbPath.Location = new System.Drawing.Point(15, 27);
+            this.tbPath.Location = new System.Drawing.Point(51, 22);
             this.tbPath.Name = "tbPath";
             this.tbPath.Size = new System.Drawing.Size(355, 20);
             this.tbPath.TabIndex = 3;
             this.tbPath.Text = "C:\\Users\\ASUS\\OneDrive\\Рабочий стол\\from rtf.mrt";
             // 
-            // button3
+            // buttonChooseFile
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
-            this.button3.FlatAppearance.BorderSize = 3;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.button3.Location = new System.Drawing.Point(376, 14);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 44);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Выбрать шаблон";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonChooseFile.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonChooseFile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
+            this.buttonChooseFile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
+            this.buttonChooseFile.FlatAppearance.BorderSize = 3;
+            this.buttonChooseFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChooseFile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonChooseFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.buttonChooseFile.Location = new System.Drawing.Point(412, 9);
+            this.buttonChooseFile.Name = "buttonChooseFile";
+            this.buttonChooseFile.Size = new System.Drawing.Size(96, 44);
+            this.buttonChooseFile.TabIndex = 4;
+            this.buttonChooseFile.Text = "Выбрать шаблон";
+            this.buttonChooseFile.UseVisualStyleBackColor = false;
+            this.buttonChooseFile.Click += new System.EventHandler(this.buttonChooseFile_Click);
             // 
             // dataSet1
             // 
@@ -150,8 +156,9 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.faceshortNAMEDataGridViewTextBoxColumn,
@@ -181,9 +188,10 @@
             this.docUserPhoneDataGridViewTextBoxColumn,
             this.docUserEmailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dataTable1BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 142);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 109);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(826, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(550, 93);
             this.dataGridView1.TabIndex = 5;
             // 
             // faceshortNAMEDataGridViewTextBoxColumn
@@ -368,17 +376,35 @@
             this.docUserEmailDataGridViewTextBoxColumn.Name = "docUserEmailDataGridViewTextBoxColumn";
             this.docUserEmailDataGridViewTextBoxColumn.Width = 99;
             // 
+            // buttonWriteXml
+            // 
+            this.buttonWriteXml.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonWriteXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
+            this.buttonWriteXml.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
+            this.buttonWriteXml.FlatAppearance.BorderSize = 3;
+            this.buttonWriteXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWriteXml.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonWriteXml.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.buttonWriteXml.Location = new System.Drawing.Point(51, 67);
+            this.buttonWriteXml.Name = "buttonWriteXml";
+            this.buttonWriteXml.Size = new System.Drawing.Size(96, 36);
+            this.buttonWriteXml.TabIndex = 1;
+            this.buttonWriteXml.Text = "WriteXml";
+            this.buttonWriteXml.UseVisualStyleBackColor = false;
+            this.buttonWriteXml.Click += new System.EventHandler(this.buttonWriteXml_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.ClientSize = new System.Drawing.Size(1009, 722);
+            this.ClientSize = new System.Drawing.Size(550, 202);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonChooseFile);
             this.Controls.Add(this.tbPath);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonWriteXml);
+            this.Controls.Add(this.buttonShowReport);
             this.Controls.Add(this.buttonRunDesign);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -393,10 +419,10 @@
         #endregion
 
         private System.Windows.Forms.Button buttonRunDesign;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonShowReport;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbPath;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonChooseFile;
         private System.Windows.Forms.BindingSource dataTable1BindingSource;
         private Data.DataSet1 dataSet1;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -426,6 +452,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn docUserFioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn docUserPhoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn docUserEmailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button buttonWriteXml;
     }
 }
 

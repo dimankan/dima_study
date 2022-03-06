@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -28,43 +29,68 @@ namespace Stimul47.StaticClasses
 
 
         /// <summary>
-        /// Выбрать файл
+        /// Выбрать файл который нужно открыть
         /// </summary>
-        /// <param name="filter"></param>
+        /// <param name="filter">фильтр</param>
         /// <returns></returns>
-        public static string Method(string filter = "All files (*.*)|*.*")
+        public static string ChooseFile(string filter = "All files (*.*)|*.*")
         {
             string result = string.Empty;
 
-            //var fileContent = string.Empty;
-            //var filePath = string.Empty;
-
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                //openFileDialog.InitialDirectory = path;
-                //openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.Filter = filter;
-                //openFileDialog.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
-                openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     result = openFileDialog.FileName;
-                    ////Get the path of specified file
-                    //filePath = openFileDialog.FileName;
-
-                    ////Read the contents of the file into a stream
-                    //var fileStream = openFileDialog.OpenFile();
-
-                    //using (StreamReader reader = new StreamReader(fileStream))
-                    //{
-                    //    fileContent = reader.ReadToEnd();
-                    //}
                 }
             }
             return result;
-            //MessageBox.Show(fileContent, "File Content at path: " + filePath, MessageBoxButtons.OK);
         }
+
+        /// <summary>
+        /// Выбирает место, куда сохранить файл
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public static string SaveFile(string filter = "All files (*.*)|*.*")
+        {
+            string result = String.Empty;
+            try
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+                saveFileDialog1.Filter = filter;
+                saveFileDialog1.FilterIndex = 2;
+                saveFileDialog1.RestoreDirectory = true;
+
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    result = saveFileDialog1.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка сохраниения:\n" + ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return result;
+
+        }
+
+        /// <summary>
+        /// Диалоговое окно на открытие файла
+        /// </summary>
+        /// <param name="path"></param>
+        public static void DialogOpenFile(string path)
+        {
+            DialogResult result = MessageBox.Show("Файл сохранен!\nОткрыть?", "Сохранение", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                Process.Start("explorer", path);
+            }
+        }
+
     }
 }
