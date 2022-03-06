@@ -17,6 +17,7 @@ namespace Stimul47
         private Stimulsoft.Report.StiReport stiReport1;
         private DataSet ds;
         private DataTable dt;
+        private DataTable dtTrans;
         Dictionary<string, string> data;
 
         public Form1()
@@ -54,6 +55,14 @@ namespace Stimul47
                 {"DocUserPhone", "ииииииииии"},
                 {" DocUserEmail", "ттттттттт" }
                 };
+
+            dt = FillDataTable(data);
+            dataGridView1.DataSource = dt;
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tbPath.Text = StaticClasses.Select.Method("Шаблон Stimulsoft |*.mrt");
+            //MessageBox.Show(tbPath.Text);
         }
         private void buttonRunDesign_Click(object sender, EventArgs e)
         {
@@ -63,16 +72,16 @@ namespace Stimul47
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (dt != null)
+            if (ds.Tables.Count !=0)
             {
                 ds.Tables.Clear();
             }
 
-            dt = FillDataTable(data);
 
-            GetXML(dt);
 
-            ds.Tables.Add(dt);
+            //GetXML(dt);
+
+            ds.Tables.Add((DataTable)dataGridView1.DataSource);
 
             stiReport1.RegData(ds);
             stiReport1.Load(tbPath.Text);
@@ -123,6 +132,25 @@ namespace Stimul47
             }
         }
 
+        private DataTable GetTransposedTable(DataTable dt)
+        {
+            DataTable newTable = new DataTable();
+            newTable.Columns.Add(new DataColumn("0", typeof(string)));
+            for (int i = 0; i < dt.Columns.Count; i++)
+            {
+                DataRow newRow = newTable.NewRow();
+                newRow[0] = dt.Columns[i].ColumnName;
+                for (int j = 1; j <= dt.Rows.Count; j++)
+                {
+                    if (newTable.Columns.Count < dt.Rows.Count + 1)
+                        newTable.Columns.Add(new DataColumn(j.ToString(), typeof(string)));
+                    newRow[j] = dt.Rows[j - 1][i];
+                }
+                newTable.Rows.Add(newRow);
+            }
+            return newTable;
+        }
+
         #region Old Filling
         /*
         dataTable1.Columns.Add("Key", type: typeof(string));
@@ -138,11 +166,7 @@ namespace Stimul47
         */
         #endregion
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            tbPath.Text = StaticClasses.Select.Method("Шаблон Stimulsoft |*.mrt");
-            MessageBox.Show(tbPath.Text);
-        }
+
 
 
     }
