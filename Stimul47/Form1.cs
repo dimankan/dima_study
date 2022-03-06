@@ -17,28 +17,16 @@ namespace Stimul47
         private Stimulsoft.Report.StiReport stiReport1;
         private DataSet ds;
         private DataTable dt;
+        Dictionary<string, string> data;
 
         public Form1()
         {
             InitializeComponent();
+
+
             stiReport1 = new Stimulsoft.Report.StiReport();
             ds = new DataSet();
-
-
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            stiReport1.Load(tbPath.Text);
-            stiReport1.Design();
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (dt == null)
-            {
-                Dictionary<string, string> data = new Dictionary<string, string>(){
+            data = new Dictionary<string, string>(){
                 {"Face_short_NAME", "first" },
                 {"Face_short_INN", "second" },
                 {"Face_short_KPP", "thirt" },
@@ -66,17 +54,30 @@ namespace Stimul47
                 {"DocUserPhone", "ииииииииии"},
                 {" DocUserEmail", "ттттттттт" }
                 };
+        }
+        private void buttonRunDesign_Click(object sender, EventArgs e)
+        {
+            stiReport1.Load(tbPath.Text);
+            stiReport1.Design();
+        }
 
-                dt = FillDataTable(data);
-
-                GetXML(dt);
-
-                ds.Tables.Add(dt);
-
-                stiReport1.RegData(ds);
-                stiReport1.Load(@"C:\Users\ASUS\OneDrive\Рабочий стол\from rtf.mrt");
-                stiReport1.Compile();
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dt != null)
+            {
+                ds.Tables.Clear();
             }
+
+            dt = FillDataTable(data);
+
+            GetXML(dt);
+
+            ds.Tables.Add(dt);
+
+            stiReport1.RegData(ds);
+            stiReport1.Load(tbPath.Text);
+            stiReport1.Compile();
+
 
             stiReport1.Show();
         }
@@ -136,5 +137,13 @@ namespace Stimul47
         dataTable1.AcceptChanges(); 
         */
         #endregion
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            tbPath.Text = StaticClasses.Select.Method("Шаблон Stimulsoft |*.mrt");
+            MessageBox.Show(tbPath.Text);
+        }
+
+
     }
 }
