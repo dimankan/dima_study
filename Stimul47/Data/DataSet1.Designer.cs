@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace Stimul47 {
+namespace Stimul47.Data {
     
     
     /// <summary>

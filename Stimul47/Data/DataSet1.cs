@@ -1,4 +1,4 @@
-﻿namespace Stimul47
+﻿namespace Stimul47.Data
 {
 
 
