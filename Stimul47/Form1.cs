@@ -29,7 +29,7 @@ namespace Stimul47
         private void button1_Click(object sender, EventArgs e)
         {
 
-            stiReport1.Load(@"D:\Req.mrt");
+            stiReport1.Load(tbPath.Text);
             stiReport1.Design();
 
         }

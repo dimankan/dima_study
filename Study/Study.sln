@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study", "Study.csproj", "{9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stimul47", "..\Stimul47\Stimul47.csproj", "{79657285-4F74-4AC3-A526-72A252198AC6}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weekly Report", "..\Weekly Report\Weekly Report.csproj", "{9E46D221-2788-4212-94FE-1D9F761C89F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E46D221-2788-4212-94FE-1D9F761C89F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E46D221-2788-4212-94FE-1D9F761C89F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E46D221-2788-4212-94FE-1D9F761C89F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E46D221-2788-4212-94FE-1D9F761C89F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
