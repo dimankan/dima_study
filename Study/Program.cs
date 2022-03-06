@@ -15,6 +15,7 @@ namespace Study
             Reflect.ShowMemberInfoName("Student");
 
             Console.WriteLine();
+
             Reflect.ShowMemberInfoNameNonPublicORInstance("Student");
 
             Console.WriteLine();

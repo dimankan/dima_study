@@ -43,7 +43,9 @@ namespace Study
             }
         }
 
-
+        /// <summary>
+        /// Изменяет приватное поле _temp для нового экземпляра класса
+        /// </summary>
         public static void ChangeField()
         {
             Student student = new Student();
