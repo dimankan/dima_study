@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Study", "Study.csproj", "{95E9653B-A7F3-41CF-BF57-AFAFCEAAD69B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stimul47", "..\Stimul47\Stimul47.csproj", "{79657285-4F74-4AC3-A526-72A252198AC6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stimul47", "Stimul47.csproj", "{79657285-4F74-4AC3-A526-72A252198AC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{95E9653B-A7F3-41CF-BF57-AFAFCEAAD69B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{95E9653B-A7F3-41CF-BF57-AFAFCEAAD69B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{95E9653B-A7F3-41CF-BF57-AFAFCEAAD69B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{95E9653B-A7F3-41CF-BF57-AFAFCEAAD69B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79657285-4F74-4AC3-A526-72A252198AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -26,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {FA4B12C4-B14D-4FB0-B002-057D0A13681F}
+		SolutionGuid = {64973E82-B9D8-4C5F-AA20-32C88F21772F}
 	EndGlobalSection
 EndGlobal
