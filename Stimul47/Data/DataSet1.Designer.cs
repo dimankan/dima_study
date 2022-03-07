@@ -331,6 +331,26 @@ namespace Stimul47.Data {
             
             private global::System.Data.DataColumn columnDocUserEmail;
             
+            private global::System.Data.DataColumn columnvno_naim;
+            
+            private global::System.Data.DataColumn columnhead_org_naim_;
+            
+            private global::System.Data.DataColumn columnhead_org_naimk;
+            
+            private global::System.Data.DataColumn columnhead_org_adres;
+            
+            private global::System.Data.DataColumn columnhead_org_tel;
+            
+            private global::System.Data.DataColumn columndoc_bank_naim;
+            
+            private global::System.Data.DataColumn columndoc_bank_inn;
+            
+            private global::System.Data.DataColumn columndoc_bank_kpp;
+            
+            private global::System.Data.DataColumn columndoc_bank_bik;
+            
+            private global::System.Data.DataColumn columndoc_bank_adres;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1DataTable() {
@@ -574,6 +594,86 @@ namespace Stimul47.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn vno_naimColumn {
+                get {
+                    return this.columnvno_naim;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn head_org_naim_Column {
+                get {
+                    return this.columnhead_org_naim_;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn head_org_naimkColumn {
+                get {
+                    return this.columnhead_org_naimk;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn head_org_adresColumn {
+                get {
+                    return this.columnhead_org_adres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn head_org_telColumn {
+                get {
+                    return this.columnhead_org_tel;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn doc_bank_naimColumn {
+                get {
+                    return this.columndoc_bank_naim;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn doc_bank_innColumn {
+                get {
+                    return this.columndoc_bank_inn;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn doc_bank_kppColumn {
+                get {
+                    return this.columndoc_bank_kpp;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn doc_bank_bikColumn {
+                get {
+                    return this.columndoc_bank_bik;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn doc_bank_adresColumn {
+                get {
+                    return this.columndoc_bank_adres;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -635,7 +735,17 @@ namespace Stimul47.Data {
                         string doc_srok, 
                         string DocUserFio, 
                         string DocUserPhone, 
-                        string DocUserEmail) {
+                        string DocUserEmail, 
+                        string vno_naim, 
+                        string head_org_naim_, 
+                        string head_org_naimk, 
+                        string head_org_adres, 
+                        string head_org_tel, 
+                        string doc_bank_naim, 
+                        string doc_bank_inn, 
+                        string doc_bank_kpp, 
+                        string doc_bank_bik, 
+                        string doc_bank_adres) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         Face_short_NAME,
@@ -663,7 +773,17 @@ namespace Stimul47.Data {
                         doc_srok,
                         DocUserFio,
                         DocUserPhone,
-                        DocUserEmail};
+                        DocUserEmail,
+                        vno_naim,
+                        head_org_naim_,
+                        head_org_naimk,
+                        head_org_adres,
+                        head_org_tel,
+                        doc_bank_naim,
+                        doc_bank_inn,
+                        doc_bank_kpp,
+                        doc_bank_bik,
+                        doc_bank_adres};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -712,6 +832,16 @@ namespace Stimul47.Data {
                 this.columnDocUserFio = base.Columns["DocUserFio"];
                 this.columnDocUserPhone = base.Columns["DocUserPhone"];
                 this.columnDocUserEmail = base.Columns["DocUserEmail"];
+                this.columnvno_naim = base.Columns["vno_naim"];
+                this.columnhead_org_naim_ = base.Columns["head_org_naim "];
+                this.columnhead_org_naimk = base.Columns["head_org_naimk"];
+                this.columnhead_org_adres = base.Columns["head_org_adres"];
+                this.columnhead_org_tel = base.Columns["head_org_tel"];
+                this.columndoc_bank_naim = base.Columns["doc_bank_naim"];
+                this.columndoc_bank_inn = base.Columns["doc_bank_inn"];
+                this.columndoc_bank_kpp = base.Columns["doc_bank_kpp"];
+                this.columndoc_bank_bik = base.Columns["doc_bank_bik"];
+                this.columndoc_bank_adres = base.Columns["doc_bank_adres"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -769,6 +899,26 @@ namespace Stimul47.Data {
                 base.Columns.Add(this.columnDocUserPhone);
                 this.columnDocUserEmail = new global::System.Data.DataColumn("DocUserEmail", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDocUserEmail);
+                this.columnvno_naim = new global::System.Data.DataColumn("vno_naim", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnvno_naim);
+                this.columnhead_org_naim_ = new global::System.Data.DataColumn("head_org_naim ", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnhead_org_naim_);
+                this.columnhead_org_naimk = new global::System.Data.DataColumn("head_org_naimk", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnhead_org_naimk);
+                this.columnhead_org_adres = new global::System.Data.DataColumn("head_org_adres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnhead_org_adres);
+                this.columnhead_org_tel = new global::System.Data.DataColumn("head_org_tel", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnhead_org_tel);
+                this.columndoc_bank_naim = new global::System.Data.DataColumn("doc_bank_naim", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoc_bank_naim);
+                this.columndoc_bank_inn = new global::System.Data.DataColumn("doc_bank_inn", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoc_bank_inn);
+                this.columndoc_bank_kpp = new global::System.Data.DataColumn("doc_bank_kpp", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoc_bank_kpp);
+                this.columndoc_bank_bik = new global::System.Data.DataColumn("doc_bank_bik", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoc_bank_bik);
+                this.columndoc_bank_adres = new global::System.Data.DataColumn("doc_bank_adres", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columndoc_bank_adres);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1327,6 +1477,166 @@ namespace Stimul47.Data {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string vno_naim {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.vno_naimColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'vno_naim\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.vno_naimColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string head_org_naim_ {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.head_org_naim_Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'head_org_naim \' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.head_org_naim_Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string head_org_naimk {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.head_org_naimkColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'head_org_naimk\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.head_org_naimkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string head_org_adres {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.head_org_adresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'head_org_adres\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.head_org_adresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string head_org_tel {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.head_org_telColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'head_org_tel\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.head_org_telColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string doc_bank_naim {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.doc_bank_naimColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'doc_bank_naim\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.doc_bank_naimColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string doc_bank_inn {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.doc_bank_innColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'doc_bank_inn\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.doc_bank_innColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string doc_bank_kpp {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.doc_bank_kppColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'doc_bank_kpp\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.doc_bank_kppColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string doc_bank_bik {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.doc_bank_bikColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'doc_bank_bik\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.doc_bank_bikColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string doc_bank_adres {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.doc_bank_adresColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'doc_bank_adres\' в таблице \'DataTable1\' равно DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.doc_bank_adresColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsFace_short_NAMENull() {
                 return this.IsNull(this.tableDataTable1.Face_short_NAMEColumn);
             }
@@ -1635,6 +1945,126 @@ namespace Stimul47.Data {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDocUserEmailNull() {
                 this[this.tableDataTable1.DocUserEmailColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isvno_naimNull() {
+                return this.IsNull(this.tableDataTable1.vno_naimColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setvno_naimNull() {
+                this[this.tableDataTable1.vno_naimColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ishead_org_naim_Null() {
+                return this.IsNull(this.tableDataTable1.head_org_naim_Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Sethead_org_naim_Null() {
+                this[this.tableDataTable1.head_org_naim_Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ishead_org_naimkNull() {
+                return this.IsNull(this.tableDataTable1.head_org_naimkColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Sethead_org_naimkNull() {
+                this[this.tableDataTable1.head_org_naimkColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ishead_org_adresNull() {
+                return this.IsNull(this.tableDataTable1.head_org_adresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Sethead_org_adresNull() {
+                this[this.tableDataTable1.head_org_adresColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Ishead_org_telNull() {
+                return this.IsNull(this.tableDataTable1.head_org_telColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Sethead_org_telNull() {
+                this[this.tableDataTable1.head_org_telColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdoc_bank_naimNull() {
+                return this.IsNull(this.tableDataTable1.doc_bank_naimColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdoc_bank_naimNull() {
+                this[this.tableDataTable1.doc_bank_naimColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdoc_bank_innNull() {
+                return this.IsNull(this.tableDataTable1.doc_bank_innColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdoc_bank_innNull() {
+                this[this.tableDataTable1.doc_bank_innColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdoc_bank_kppNull() {
+                return this.IsNull(this.tableDataTable1.doc_bank_kppColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdoc_bank_kppNull() {
+                this[this.tableDataTable1.doc_bank_kppColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdoc_bank_bikNull() {
+                return this.IsNull(this.tableDataTable1.doc_bank_bikColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdoc_bank_bikNull() {
+                this[this.tableDataTable1.doc_bank_bikColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Isdoc_bank_adresNull() {
+                return this.IsNull(this.tableDataTable1.doc_bank_adresColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void Setdoc_bank_adresNull() {
+                this[this.tableDataTable1.doc_bank_adresColumn] = global::System.Convert.DBNull;
             }
         }
         

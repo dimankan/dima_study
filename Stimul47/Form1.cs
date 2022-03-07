@@ -171,6 +171,7 @@ namespace Stimul47
             stiReport1["Face_short_ADR"] = "ADR olol";
             stiReport1["doc_num"] = "sad 2222";
         }
+
         /*
         dataTable1.Columns.Add("Key", type: typeof(string));
         dataTable1.Columns.Add("Value", type: typeof(string));
@@ -185,6 +186,16 @@ namespace Stimul47
         */
         #endregion
 
-
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(comboBox1.Text == "1123303 RFNDocRequestBank")
+            {
+                tbPath.Text = "..\\Data\\1123303 RFNDocRequestBank.mrt";
+            }
+            if(comboBox1.Text == "1125008 RFNDocRequestOrg")
+            {
+                tbPath.Text = "..\\Data\\1125008 RFNDocRequestOrg.mrt";
+            }
+        }
     }
 }

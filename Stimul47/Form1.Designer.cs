@@ -34,9 +34,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbPath = new System.Windows.Forms.TextBox();
             this.buttonChooseFile = new System.Windows.Forms.Button();
-            this.dataSet1 = new Stimul47.Data.DataSet1();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.buttonWriteXml = new System.Windows.Forms.Button();
             this.faceshortNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.faceshortINNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.faceshortKPPDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,10 +62,13 @@
             this.docUserFioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docUserPhoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.docUserEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonWriteXml = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new Stimul47.Data.DataSet1();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonRunDesign
@@ -78,7 +80,7 @@
             this.buttonRunDesign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRunDesign.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonRunDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonRunDesign.Location = new System.Drawing.Point(153, 67);
+            this.buttonRunDesign.Location = new System.Drawing.Point(143, 121);
             this.buttonRunDesign.Name = "buttonRunDesign";
             this.buttonRunDesign.Size = new System.Drawing.Size(96, 36);
             this.buttonRunDesign.TabIndex = 0;
@@ -95,7 +97,7 @@
             this.buttonShowReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShowReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonShowReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonShowReport.Location = new System.Drawing.Point(255, 67);
+            this.buttonShowReport.Location = new System.Drawing.Point(245, 121);
             this.buttonShowReport.Name = "buttonShowReport";
             this.buttonShowReport.Size = new System.Drawing.Size(96, 36);
             this.buttonShowReport.TabIndex = 1;
@@ -109,7 +111,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.label1.Location = new System.Drawing.Point(48, 4);
+            this.label1.Location = new System.Drawing.Point(38, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 2;
@@ -119,7 +121,7 @@
             // 
             this.tbPath.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.tbPath.Location = new System.Drawing.Point(51, 22);
+            this.tbPath.Location = new System.Drawing.Point(41, 76);
             this.tbPath.Name = "tbPath";
             this.tbPath.Size = new System.Drawing.Size(355, 20);
             this.tbPath.TabIndex = 3;
@@ -134,23 +136,13 @@
             this.buttonChooseFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChooseFile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonChooseFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonChooseFile.Location = new System.Drawing.Point(412, 9);
+            this.buttonChooseFile.Location = new System.Drawing.Point(402, 63);
             this.buttonChooseFile.Name = "buttonChooseFile";
             this.buttonChooseFile.Size = new System.Drawing.Size(96, 44);
             this.buttonChooseFile.TabIndex = 4;
             this.buttonChooseFile.Text = "Выбрать шаблон";
             this.buttonChooseFile.UseVisualStyleBackColor = false;
             this.buttonChooseFile.Click += new System.EventHandler(this.buttonChooseFile_Click);
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.dataSet1;
             // 
             // dataGridView1
             // 
@@ -189,10 +181,27 @@
             this.docUserEmailDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.dataTable1BindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 109);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 172);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(550, 93);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 93);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // buttonWriteXml
+            // 
+            this.buttonWriteXml.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonWriteXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
+            this.buttonWriteXml.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
+            this.buttonWriteXml.FlatAppearance.BorderSize = 3;
+            this.buttonWriteXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonWriteXml.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonWriteXml.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.buttonWriteXml.Location = new System.Drawing.Point(41, 121);
+            this.buttonWriteXml.Name = "buttonWriteXml";
+            this.buttonWriteXml.Size = new System.Drawing.Size(96, 36);
+            this.buttonWriteXml.TabIndex = 1;
+            this.buttonWriteXml.Text = "WriteXml";
+            this.buttonWriteXml.UseVisualStyleBackColor = false;
+            this.buttonWriteXml.Click += new System.EventHandler(this.buttonWriteXml_Click);
             // 
             // faceshortNAMEDataGridViewTextBoxColumn
             // 
@@ -376,41 +385,63 @@
             this.docUserEmailDataGridViewTextBoxColumn.Name = "docUserEmailDataGridViewTextBoxColumn";
             this.docUserEmailDataGridViewTextBoxColumn.Width = 99;
             // 
-            // buttonWriteXml
+            // dataTable1BindingSource
             // 
-            this.buttonWriteXml.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonWriteXml.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
-            this.buttonWriteXml.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
-            this.buttonWriteXml.FlatAppearance.BorderSize = 3;
-            this.buttonWriteXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWriteXml.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.buttonWriteXml.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonWriteXml.Location = new System.Drawing.Point(51, 67);
-            this.buttonWriteXml.Name = "buttonWriteXml";
-            this.buttonWriteXml.Size = new System.Drawing.Size(96, 36);
-            this.buttonWriteXml.TabIndex = 1;
-            this.buttonWriteXml.Text = "WriteXml";
-            this.buttonWriteXml.UseVisualStyleBackColor = false;
-            this.buttonWriteXml.Click += new System.EventHandler(this.buttonWriteXml_Click);
+            this.dataTable1BindingSource.DataMember = "DataTable1";
+            this.dataTable1BindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.label2.Location = new System.Drawing.Point(38, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 15);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Выбрать шаблон:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1125008 RFNDocRequestOrg",
+            "1123303 RFNDocRequestBank"});
+            this.comboBox1.Location = new System.Drawing.Point(41, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(180, 21);
+            this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.ClientSize = new System.Drawing.Size(550, 202);
+            this.ClientSize = new System.Drawing.Size(553, 265);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonChooseFile);
             this.Controls.Add(this.tbPath);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonWriteXml);
             this.Controls.Add(this.buttonShowReport);
             this.Controls.Add(this.buttonRunDesign);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,6 +484,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn docUserPhoneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn docUserEmailDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button buttonWriteXml;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
