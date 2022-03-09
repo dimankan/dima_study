@@ -143,7 +143,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StaticClasses\Select.cs" />
+    <Compile Include="StaticClasses\Selector.cs" />
+    <Compile Include="StaticClasses\Table.cs" />
+    <Compile Include="StaticClasses\XML.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

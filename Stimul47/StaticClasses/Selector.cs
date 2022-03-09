@@ -9,10 +9,10 @@ using System.Windows.Forms;
 
 namespace Stimul47.StaticClasses
 {
-    internal static class Select
+    internal static class Selector
     {
         /// <summary>
-        /// Выбор папки для сохранения
+        /// Выбор папки
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>

@@ -37,6 +37,8 @@
             this.buttonWriteXml = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonExportPDF = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,6 +94,7 @@
             this.tbPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
             this.tbPath.Location = new System.Drawing.Point(41, 76);
             this.tbPath.Name = "tbPath";
+            this.tbPath.ReadOnly = true;
             this.tbPath.Size = new System.Drawing.Size(355, 20);
             this.tbPath.TabIndex = 3;
             this.tbPath.Text = "C:\\Users\\ASUS\\OneDrive\\Рабочий стол\\from rtf.mrt";
@@ -172,6 +175,35 @@
             this.comboBox1.TabIndex = 6;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.label3.Location = new System.Drawing.Point(533, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "v.1";
+            // 
+            // buttonExportPDF
+            // 
+            this.buttonExportPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonExportPDF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(127)))), ((int)(((byte)(108)))));
+            this.buttonExportPDF.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(157)))), ((int)(((byte)(167)))));
+            this.buttonExportPDF.FlatAppearance.BorderSize = 3;
+            this.buttonExportPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExportPDF.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.buttonExportPDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
+            this.buttonExportPDF.Location = new System.Drawing.Point(347, 121);
+            this.buttonExportPDF.Name = "buttonExportPDF";
+            this.buttonExportPDF.Size = new System.Drawing.Size(96, 36);
+            this.buttonExportPDF.TabIndex = 1;
+            this.buttonExportPDF.Text = "Скачать PDF";
+            this.buttonExportPDF.UseVisualStyleBackColor = false;
+            this.buttonExportPDF.Click += new System.EventHandler(this.buttonExportPDF_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,13 +214,16 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonChooseFile);
             this.Controls.Add(this.tbPath);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonWriteXml);
+            this.Controls.Add(this.buttonExportPDF);
             this.Controls.Add(this.buttonShowReport);
             this.Controls.Add(this.buttonRunDesign);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Stimulsoft47";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,6 +241,8 @@
         private System.Windows.Forms.Button buttonWriteXml;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonExportPDF;
     }
 }
 
