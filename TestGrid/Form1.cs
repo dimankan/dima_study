@@ -14,6 +14,7 @@ namespace TestGrid
     {
         DataTable dt = new DataTable();
         DataTable dt2 = new DataTable();
+        DataSet dataSet = new DataSet();
 
         public Form1()
         {
@@ -35,6 +36,7 @@ namespace TestGrid
             row2[1] = "ssss22";
             row2[2] = "xxxx22";
             dt2.Rows.Add(row2);
+            dataGridView1.RowTemplate.Height = 100;
         }
 
 
@@ -48,6 +50,9 @@ namespace TestGrid
                 dataGridView1.Columns.Add(item.ToString(), item.ToString());
 
             }
+
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -64,6 +69,8 @@ namespace TestGrid
                 //dataGridViewRow[item.ToString()] = row[item.ToString()];
                 //dataGridViewRow[0] = item;
             }
+            //dataGridView1.Rows[0].Cells[0].Size.Height = 100;
+            //var xz = dataGridView1.Rows[0];
         }
 
         private void button3_Click(object sender, EventArgs e)

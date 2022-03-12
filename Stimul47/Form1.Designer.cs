@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonRunDesign = new System.Windows.Forms.Button();
             this.buttonShowReport = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,7 +52,7 @@
             this.buttonRunDesign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonRunDesign.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonRunDesign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonRunDesign.Location = new System.Drawing.Point(143, 121);
+            this.buttonRunDesign.Location = new System.Drawing.Point(143, 137);
             this.buttonRunDesign.Name = "buttonRunDesign";
             this.buttonRunDesign.Size = new System.Drawing.Size(96, 36);
             this.buttonRunDesign.TabIndex = 0;
@@ -68,7 +69,7 @@
             this.buttonShowReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonShowReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonShowReport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonShowReport.Location = new System.Drawing.Point(245, 121);
+            this.buttonShowReport.Location = new System.Drawing.Point(245, 137);
             this.buttonShowReport.Name = "buttonShowReport";
             this.buttonShowReport.Size = new System.Drawing.Size(96, 36);
             this.buttonShowReport.TabIndex = 1;
@@ -82,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.label1.Location = new System.Drawing.Point(38, 58);
+            this.label1.Location = new System.Drawing.Point(38, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 15);
             this.label1.TabIndex = 2;
@@ -92,7 +93,7 @@
             // 
             this.tbPath.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
-            this.tbPath.Location = new System.Drawing.Point(41, 76);
+            this.tbPath.Location = new System.Drawing.Point(41, 92);
             this.tbPath.Name = "tbPath";
             this.tbPath.ReadOnly = true;
             this.tbPath.Size = new System.Drawing.Size(355, 20);
@@ -108,7 +109,7 @@
             this.buttonChooseFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonChooseFile.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonChooseFile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonChooseFile.Location = new System.Drawing.Point(402, 63);
+            this.buttonChooseFile.Location = new System.Drawing.Point(402, 79);
             this.buttonChooseFile.Name = "buttonChooseFile";
             this.buttonChooseFile.Size = new System.Drawing.Size(96, 44);
             this.buttonChooseFile.TabIndex = 4;
@@ -123,11 +124,19 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(215)))), ((int)(((byte)(212)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 172);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 188);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 93);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 108);
             this.dataGridView1.TabIndex = 5;
             // 
             // buttonWriteXml
@@ -139,7 +148,7 @@
             this.buttonWriteXml.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWriteXml.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonWriteXml.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonWriteXml.Location = new System.Drawing.Point(41, 121);
+            this.buttonWriteXml.Location = new System.Drawing.Point(41, 137);
             this.buttonWriteXml.Name = "buttonWriteXml";
             this.buttonWriteXml.Size = new System.Drawing.Size(96, 36);
             this.buttonWriteXml.TabIndex = 1;
@@ -153,7 +162,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.label2.Location = new System.Drawing.Point(38, 9);
+            this.label2.Location = new System.Drawing.Point(38, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 15);
             this.label2.TabIndex = 2;
@@ -169,7 +178,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "1125008 RFNDocRequestOrg",
             "1123303 RFNDocRequestBank"});
-            this.comboBox1.Location = new System.Drawing.Point(41, 28);
+            this.comboBox1.Location = new System.Drawing.Point(41, 44);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(180, 21);
             this.comboBox1.TabIndex = 6;
@@ -181,7 +190,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.label3.Location = new System.Drawing.Point(533, 154);
+            this.label3.Location = new System.Drawing.Point(533, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(20, 15);
             this.label3.TabIndex = 2;
@@ -196,7 +205,7 @@
             this.buttonExportPDF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonExportPDF.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
             this.buttonExportPDF.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(236)))));
-            this.buttonExportPDF.Location = new System.Drawing.Point(347, 121);
+            this.buttonExportPDF.Location = new System.Drawing.Point(347, 137);
             this.buttonExportPDF.Name = "buttonExportPDF";
             this.buttonExportPDF.Size = new System.Drawing.Size(96, 36);
             this.buttonExportPDF.TabIndex = 1;
@@ -209,7 +218,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(103)))), ((int)(((byte)(171)))));
-            this.ClientSize = new System.Drawing.Size(553, 265);
+            this.ClientSize = new System.Drawing.Size(553, 296);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonChooseFile);
