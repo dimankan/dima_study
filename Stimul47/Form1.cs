@@ -121,8 +121,6 @@ namespace Stimul47
 
                 tbPath.Text = "..\\Data\\1123303 RFNDocRequestBank.mrt";
 
-                //ds.Tables.Clear();
-                //ds.Tables.Add(dt);
                 dataGridView1.DataSource = dt;
                 dataGridView1.RowTemplate.Height = 130;
 
@@ -133,8 +131,6 @@ namespace Stimul47
 
                 tbPath.Text = "..\\Data\\1125008 RFNDocRequestOrg.mrt";
 
-                //ds.Tables.Clear();
-                //ds.Tables.Add(dt);
                 dataGridView1.DataSource = dt;
                 dataGridView1.RowTemplate.Height = 130;
 
