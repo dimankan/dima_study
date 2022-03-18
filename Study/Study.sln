@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generator for query templat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGrid", "..\TestGrid\TestGrid.csproj", "{685AA301-93B1-41D8-9ED3-C3C9A98D7EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUserControl", "..\DemoUserControl\DemoUserControl.csproj", "{D223CB0F-B1F3-444B-865F-F2BFCAC658F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControlDemo", "..\DemoUserControl\UserControlDemo.csproj", "{D223CB0F-B1F3-444B-865F-F2BFCAC658F1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{F3EFD041-0D79-4E4C-A09C-697047F1CEF9}"
 EndProject
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUC", "..\TestUC\TestUC.csproj", "{F4760243-24C1-4039-B473-82058AE3EF82}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVPDemo", "..\MVPDemo\MVPDemo.csproj", "{7EAE8084-C267-492C-9709-903DE3A07971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateDemo", "..\DelegateDemo\DelegateDemo.csproj", "{9E741E69-839F-47EC-97EA-A6C1FA5F38A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{7EAE8084-C267-492C-9709-903DE3A07971}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EAE8084-C267-492C-9709-903DE3A07971}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EAE8084-C267-492C-9709-903DE3A07971}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E741E69-839F-47EC-97EA-A6C1FA5F38A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E741E69-839F-47EC-97EA-A6C1FA5F38A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E741E69-839F-47EC-97EA-A6C1FA5F38A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E741E69-839F-47EC-97EA-A6C1FA5F38A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{FB18C559-7405-461D-B9A2-271CA9791143} = {F3EFD041-0D79-4E4C-A09C-697047F1CEF9}
 		{F4760243-24C1-4039-B473-82058AE3EF82} = {1F7C645D-3D42-4F1C-B224-F351BE09A3A4}
 		{7EAE8084-C267-492C-9709-903DE3A07971} = {F3EFD041-0D79-4E4C-A09C-697047F1CEF9}
+		{9E741E69-839F-47EC-97EA-A6C1FA5F38A6} = {F3EFD041-0D79-4E4C-A09C-697047F1CEF9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA4B12C4-B14D-4FB0-B002-057D0A13681F}
