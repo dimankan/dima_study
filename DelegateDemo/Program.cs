@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace DelegateDemo
 {
+    // Является классом подписчиком
     internal class Program
     {
         static void Main(string[] args)
@@ -14,7 +15,22 @@ namespace DelegateDemo
 
             //RunStudentAction();
 
+            //RunStudentMovePropertAction();
+             
+            Student student = new Student();
+            //student.MovingPropertyEH += new EventHandler<MovingEventArgs>(Student_MovingPropertyEH);
+            student.MovingPropertyEH += Student_MovingPropertyEH;
+
+            student.MoveMethodEventHandler(5);
         }
+
+        private static void Student_MovingPropertyEH(object sender, MovingEventArgs e)
+        {
+            //throw new NotImplementedException();
+            Console.WriteLine(e.Message);
+        }
+
+
 
 
 
@@ -40,7 +56,6 @@ namespace DelegateDemo
             return method(testString);
         }
         #endregion
-
         #region 2.1 StudentSimple. Без делегата
         private static void RunStudentSimple()
         {
@@ -49,7 +64,7 @@ namespace DelegateDemo
         }
 
         #endregion
-        #region 2.2. StudentDelegate
+        #region StudentDelegate
         private static void RunStudentDelegate()
         {
             Student student = new Student();
@@ -63,7 +78,6 @@ namespace DelegateDemo
         }
 
         #endregion
-
         //Обобщенные делегаты Action<T1,T2,T...>, Func<T1,T2,T..., T out>
         #region 2.3.1.1 Action. Без свойства.
         private static void RunStudentAction()
@@ -71,8 +85,18 @@ namespace DelegateDemo
             Student student = new Student();
             Action<string> method = Show; // Метод Show тот же что и в 2.2
             student.Move(7, method);
-        } 
+        }
+
         #endregion
+
+
+        private static void RunStudentMovePropertAction()
+        {
+            Student student = new Student();
+
+            //student.Moving = Show;
+            student.MoveByProperty(5);
+        }
 
 
 
