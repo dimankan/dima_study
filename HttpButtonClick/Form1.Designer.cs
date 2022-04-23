@@ -36,21 +36,21 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(148, 76);
+            this.textBox1.Location = new System.Drawing.Point(70, 52);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(298, 23);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(43, 139);
+            this.textBox2.Location = new System.Drawing.Point(70, 97);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(290, 23);
             this.textBox2.TabIndex = 0;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(52, 239);
+            this.textBox3.Location = new System.Drawing.Point(70, 155);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(290, 105);

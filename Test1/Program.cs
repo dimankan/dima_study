@@ -7,11 +7,7 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            int x = 32;
-            int[] arr = {3,4,5,6};
-
-            bool isHave = arr.Contains(x);
-            Console.WriteLine(isHave);
+            Ц
 
         }
     }
