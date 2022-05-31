@@ -10,7 +10,7 @@ namespace Strategy
             var dataReader = new DataReader();
             Console.WriteLine(dataReader.GetValue(new StringDataReader(), "Firrs\nsecond\nthirt"));
             Console.WriteLine("===========");
-            Console.WriteLine(dataReader.GetValue(new FileDataReader(), @"C:\Users\ASUS\OneDrive\Рабочий стол\11.txt"));   
+            Console.WriteLine(dataReader.GetValue(new FileDataReader(), @"C:\Users\ASUS\OneDrive\Рабочий стол\Текстовый документ.txt"));   
 
         }
     }
