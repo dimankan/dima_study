@@ -36,5 +36,11 @@ namespace DocDays
         {
             textBox1.Text = dateTimePicker2.Value.ToShortDateString();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DateTime dateTime = DateTime.Now;
+            textBox2.Text = dateTime.ToShortDateString();
+        }
     }
 }
