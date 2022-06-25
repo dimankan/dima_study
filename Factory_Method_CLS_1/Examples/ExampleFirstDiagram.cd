@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Factory_Method_CLS_1.Examples.HayDeveloper">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory_Method_CLS_1.Examples.WoodDeveloper">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory_Method_CLS_1.Examples.House" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory_Method_CLS_1.Examples.PanelHouse">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Factory_Method_CLS_1.Examples.HayHouse">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
