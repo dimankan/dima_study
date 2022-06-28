@@ -82,7 +82,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RelationsCLS", "..\Relation
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Порождающие", "Порождающие", "{8143BB29-F72B-4A34-B3BE-F7C455C083FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory_Method_CLS_1", "..\Factory_Method_CLS_1\Factory_Method_CLS_1.csproj", "{D6AD0AF8-4669-47FC-A618-5A6014333D56}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory_Method_CLS_1", "..\Factory_Method_CLS_1\Factory_Method_CLS_1.csproj", "{D6AD0AF8-4669-47FC-A618-5A6014333D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract_Factory", "..\Abstract_Factory\Abstract_Factory.csproj", "{29A152AD-6504-4F0F-A935-8872AFD0523A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -206,6 +208,10 @@ Global
 		{D6AD0AF8-4669-47FC-A618-5A6014333D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6AD0AF8-4669-47FC-A618-5A6014333D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6AD0AF8-4669-47FC-A618-5A6014333D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A152AD-6504-4F0F-A935-8872AFD0523A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A152AD-6504-4F0F-A935-8872AFD0523A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A152AD-6504-4F0F-A935-8872AFD0523A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A152AD-6504-4F0F-A935-8872AFD0523A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -240,6 +246,7 @@ Global
 		{8A745B06-94F2-43C6-AE82-C9A599D36BC6} = {240CDCA1-553C-4E55-AC3D-0725608D3330}
 		{8143BB29-F72B-4A34-B3BE-F7C455C083FE} = {0B15CCF0-573C-438B-B6FF-E1E1D5A79143}
 		{D6AD0AF8-4669-47FC-A618-5A6014333D56} = {8143BB29-F72B-4A34-B3BE-F7C455C083FE}
+		{29A152AD-6504-4F0F-A935-8872AFD0523A} = {8143BB29-F72B-4A34-B3BE-F7C455C083FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA4B12C4-B14D-4FB0-B002-057D0A13681F}

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Abstract_Factory.Examples.Hero">
+    <Position X="8" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAIAAAAACAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.HeroFactory">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.ElfFactory">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.VoinFactory">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.Weapon">
+    <Position X="2" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.Movement">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.Arbalet">
+    <Position X="0.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.Sword">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.FlyMovement">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Abstract_Factory.Examples.RunMovement">
+    <Position X="7" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Examples\ExampleFirst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
